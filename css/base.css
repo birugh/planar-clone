@@ -1,0 +1,49 @@
+:root {
+    /* * White Colors */
+    --white: #ffffff;
+    --black: #000000;
+
+    /* * Dark Colors */
+    --black_knight: #020a0f;
+    --off_black: #303030;
+
+    /* * Gray Colors */
+    --calligraphy: #5a626c;
+    --sleet: #888c95;
+    --dark_mineral: #505663;
+
+    /* * Blue Colors */
+    --veiling_waterfalls: #d3e4fd;
+    --polar_glow: #5696f7;
+    --maritime_outpost: #1b477d;
+
+    /* * Grid System */
+    --columns: 12;
+    --gutter: 64px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    font-family: "Inter", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--var(--white));
+    color: var(--dark_mineral);
+    line-height: 1.6;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}

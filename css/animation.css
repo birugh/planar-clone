@@ -1,0 +1,167 @@
+@keyframes features {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translate(30px, 0);
+    }
+
+    100% {
+        transform: translate(30px, 0);
+    }
+}
+
+@keyframes phone {
+    0% {
+        transform: translate(0, 800px);
+    }
+
+    100% {
+        transform: translate(0, 60px);
+    }
+}
+
+@keyframes image {
+    0% {
+        opacity: 0%;
+        filter: saturate(0) blur(5px);
+    }
+
+    100% {
+        opacity: 100%;
+        filter: none;
+    }
+}
+
+@keyframes ip {
+    0% {
+        opacity: 0%;
+        transform: rotateZ(-20deg);
+        scale: 80%;
+        filter: saturate(0) blur(5px);
+    }
+
+    100% {
+        transform: rotateZ(0);
+        scale: 100%;
+        opacity: 100%;
+        filter: none;
+    }
+}
+
+@keyframes developer {
+    0% {
+        opacity: 0%;
+        filter: saturate(0) blur(5px);
+        box-shadow: 0px 0px 160px 200px #232222;
+    }
+
+    100% {
+        opacity: 100%;
+        filter: none;
+        box-shadow: none;
+    }
+}
+
+@keyframes integrations__title {
+    0% {
+        opacity: 0%;
+        transform: translate(0, 60px);
+        filter: saturate(0) blur(5px);
+    }
+
+
+    100% {
+        transform: translate(0, 0);
+        opacity: 100%;
+        filter: none;
+    }
+}
+
+@keyframes integrations__content {
+    0% {
+        opacity: 0%;
+        filter: saturate(0) blur(5px);
+    }
+
+    100% {
+        opacity: 100%;
+        filter: none;
+    }
+}
+
+@keyframes integrations__cta {
+    0% {
+        opacity: 0%;
+        transform: translate(30px, 0);
+        filter: saturate(0) blur(5px);
+    }
+
+    100% {
+        opacity: 100%;
+        transform: translate(0, 0);
+        filter: none;
+    }
+}
+
+@keyframes hero__title {
+    0% {
+        opacity: 0%;
+        transform: translate(-60px, 0);
+        filter: saturate(0) blur(5px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+        opacity: 100%;
+        filter: none;
+    }
+}
+
+@keyframes slideDown {
+    0% {
+        opacity: 0%;
+        transform: translate(0, -60px);
+        filter: saturate(0) blur(5px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+        opacity: 100%;
+        filter: none;
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0%;
+        transform: translate(0, 60px);
+        filter: saturate(0) blur(5px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+        opacity: 100%;
+    }
+}
+
+@keyframes blur {
+    0% {
+        filter: saturate(0) blur(5px);
+    }
+
+    100% {
+        filter: none;
+    }
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
