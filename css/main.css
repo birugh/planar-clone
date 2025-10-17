@@ -79,7 +79,7 @@ nav {
     font-size: 16px;
 }
 
-.trusted-by .grid-row{
+.trusted-by .grid-row {
     justify-content: center;
     align-items: center;
     gap: 64px;
@@ -119,12 +119,16 @@ nav {
 }
 
 .cases__wrapper {
-    border: 1px solid var(--sleet);
+    border: 2px solid var(--coronation);
     background-color: var(--dr_white);
     border-radius: 64px;
     padding: 6px 8px;
     /* gap: 240px; */
     justify-content: space-between;
+}
+
+.cases__name {
+    font-weight: 600;
 }
 
 .cases__wrapper .cases {
@@ -138,9 +142,15 @@ nav {
 }
 
 .cases__wrapper .cases:nth-child(1) {
+    color: var(--black);
     flex-basis: 180px;
-    background-color: #fff;
-    border: 1px solid var(--sleet);
+    background-color: var(--white);
+    border: 2px solid var(--coronation);
+    box-shadow: 0px 0px 25px 1px rgba(0,0,0,0.05);
+}
+
+.cases__wrapper .cases:nth-child(n+2) {
+    color: var(--calligraphy);
 }
 
 .cases__content {
@@ -149,7 +159,8 @@ nav {
 }
 
 .cases__card img {
-    border: 1px solid var(--sleet);
+    border: 2px solid var(--coronation);
+    box-shadow: 0px 0px 25px 1px rgba(0,0,0,0.05);
     background-color: var(--white);
     border-radius: 12px;
     padding: 4px;
@@ -160,18 +171,19 @@ nav {
 #use-cases>.cases__content>.cases__card {
     text-align: start;
     padding: 24px;
-    border: 1px solid var(--sleet);
+    border: 2px solid var(--coronation);
     border-radius: 12px;
 }
 
 .cases__card h3 {
-    font-size: 14px;
     width: 240px;
+    margin-bottom: 8px;
 }
 
 .cases__card p {
     font-size: 14px;
-    max-width: 240px;
+    max-width: 230px;
+    font-weight: 400;
 }
 
 /* ! Features Section */
