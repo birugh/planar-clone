@@ -281,36 +281,42 @@ h4 span {
 }
 
 /* ! Testimonials Section */
-
 .testimonials__profile img {
     width: 32px;
     height: 32px;
-    border-radius: 4px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .testimonials__profile {
     flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
+.testimonials__profile p {
+    font-size: 12px;
+    width: 240px;
 }
 
 .testimonials__card {
-    /* height: 100%; */
+    width: 100%;
     padding: 24px;
-    /* background-color: red;
-     */
-    border: 2px solid var(--sleet);
+    border: 2px solid var(--coronation);
     margin-bottom: 24px;
-    border-radius: 12px;
+    border-radius: 16px;
 }
 
 .testimonials__card blockquote {
     margin-bottom: 24px;
+    color: var(--dark_mineral);
+    font-size: 14px;
 }
 
 .testimonials__wrapper {
-    height: 500px;
+    height: 100%;
     align-items: center;
 }
-
 
 /* ! Get Started Section */
 
