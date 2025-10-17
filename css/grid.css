@@ -1,3 +1,15 @@
+.container-medium {
+    width: 100%;
+    margin: 0;
+    padding: 0 var(--gutter);
+}
+
+.container-wide {
+    width: 100%;
+    margin: 0;
+    padding: 0 var(--gutter);
+}
+
 .container-fluid {
     width: 100%;
     margin: 0;

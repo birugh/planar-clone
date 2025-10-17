@@ -1,0 +1,35 @@
+/* ! Button */
+
+.btn {
+    color: var(--off_black);
+    padding: 12px 18px;
+    border-radius: 8px;
+    font-weight: 700;
+}
+
+.btn--primary {
+    background-color: var(--off_black);
+    color: var(--white);
+}
+
+.btn--primary::after {
+    content: "";
+    background-image: url('assets/icons/arrow-right-white.svg');
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 4px;
+}
+
+.btn--secondary {
+    padding: 10px 16px;
+    background-color: var(--white);
+    border: 2px solid var(--sleet);
+}
+
+.btn--secondary--arrow::after {
+    content: "";
+    background-image: url('assets/icons/arrow-right-white.svg');
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 4px;
+}
