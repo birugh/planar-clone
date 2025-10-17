@@ -8,9 +8,12 @@
     --off_black: #303030;
 
     /* * Gray Colors */
+    --dark_mineral: #505663;
     --calligraphy: #5a626c;
     --sleet: #888c95;
-    --dark_mineral: #505663;
+    --grams_hair: #f6f6f8;
+    --dr_white: #fafafa;
+
 
     /* * Blue Colors */
     --veiling_waterfalls: #d3e4fd;
@@ -19,7 +22,7 @@
 
     /* * Grid System */
     --columns: 12;
-    --gutter: 64px;
+    --gutter: 32px;
 }
 
 ::-webkit-scrollbar {
@@ -28,14 +31,14 @@
 
 * {
     font-family: "Inter", sans-serif;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
 body {
-    background-color: var(--var(--white));
-    color: var(--dark_mineral);
+    background-color: var(--white);
+    color: var(--black_knight);
     line-height: 1.6;
 }
 
@@ -46,4 +49,23 @@ li {
 a {
     text-decoration: none;
     color: inherit;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 72px;
+    line-height: 1.2;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 1.2;
+}
+
+p {
+    font-weight: 500;
+    color: var(--calligraphy);
+    font-size: 18px;
+    line-height: 1.2;
 }

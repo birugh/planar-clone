@@ -15,9 +15,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="assets/fonts/stylesheet.css">
     <link rel="stylesheet" href="css/components.css">
-    <link rel="stylesheet" href="css/utilities.css">
     <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/utilities.css">
     <link rel="stylesheet" href="css/resp.css">
     <link rel="stylesheet" href="css/animation.css">
     <link rel="stylesheet" href="css/main.css">
@@ -41,50 +42,66 @@
 </head>
 
 <body>
-    <header class="container-fluid">
-        <nav class="grid-row">
+    <header class="container-wide">
+        <nav class="grid-row no-gutter">
             <div class="nav__logo col-2">
                 <img src="assets/planar-logo.svg" alt="">
             </div>
-            <div class="nav__content grid-row col-8">
+            <div class="nav__content grid-row no-gutter col-6">
                 <a class="btn" href="#use-cases">Use Cases</a>
                 <a class="btn" href="#features">Features</a>
                 <a class="btn" href="#pricing">Pricing</a>
             </div>
-            <div class="nav__cta col-2">
+            <div class="nav__cta grid-row no-gutter col-4">
                 <a class="btn btn--secondary" href="javascript:;">Log in</a>
-                <a class="btn btn--primary" href="javascript:;">Start it for free</a>
+                <a class="btn btn--primary btn--primary--arrow" href="javascript:;">Start it for free</a>
             </div>
         </nav>
     </header>
 
     <main>
-        <section class="hero">
-            <div class="container-fluid">
-                <div class="grid-row hero__content">
-                    <img src="assets/hero/imgi_53_top-post-badge.svg" alt="">
-                    <h1>The world's first A1 agent
+        <section class="hero container-fluid mbt-10">
+            <div class="wrapper">
+                <div class="grid-row hero__content no-gutter">
+                    <img class="mb-2" src="assets/hero/imgi_53_top-post-badge.svg" alt="">
+                    <h1>The world's first AI agent
                         for event planning</h1>
-                    <p>Say goodbye to repetitive tasks.
-                        Planar helps you run your events in a fraction of the time.</p>
-                    <div class="hero__input">
-                        <div class="btn__input">
-                            <img src="assets/icons/arrow-up.svg" alt="">
+                    <p class="mb-8">Say goodbye to repetitive tasks.<br>Planar helps you run your events in a
+                        fraction of the time.</p>
+                    <form class="">
+                        <div class="input__container">
+                            <textarea name="prompt_event" class="prompt_event"
+                                placeholder="Describe the event you're planning..."></textarea>
+                            <div class="btn__input">
+                                <img src="assets/icons/arrow-up.svg" alt="">
+                            </div>
                         </div>
-                    </div>
+                    </form>
+                </div>
+            </div>
+            <div class="trusted-by">
+                <p class="pt-8">Trusted by event planners at</p>
+                <div class="grid-row no-gutter pt-2">
+                    <img src="assets/trusted-by/logo-loreal.svg" alt="">
+                    <img src="assets/trusted-by/logo-hyundai.svg" alt="">
+                    <img src="assets/trusted-by/logo-societe.svg" alt="">
+                    <img src="assets/trusted-by/logo-flashcore.svg" alt="">
+                    <img src="assets/trusted-by/logo-allwyn.svg" alt="">
                 </div>
             </div>
         </section>
 
-        <section class="about__planar">
-            <h2>See Planar in action</h2>
-            <img src="assets/about-planar/male-red-shirt.webp" alt="">
+        <section class="about__planar container-fluid pbt-8">
+            <div class="grid-row no-gutter">
+                <h2>See Planar in action</h2>
+                <img class="about__image" src="assets/about-planar/male-red-shirt.webp" alt="">
+            </div>
         </section>
 
-        <section id="use-cases" class="use__cases">
-            <h2>Use cases</h2>
+        <section id="use-cases" class="container-medium mbt-12">
+            <h2 class="mb-2">Use cases</h2>
             <p>Learn how Planar solves everyday event workflows with A1</p>
-            <div class="cases__wrapper">
+            <div class="cases__wrapper grid-row mbt-8">
                 <div class="cases">
                     <img src="assets/icons/launch.svg" alt="">
                     <div class="cases__name">
@@ -116,8 +133,8 @@
                     </div>
                 </div>
             </div>
-            <div class="cases__content">
-                <div class="cases__card grid-row">
+            <div class="cases__content grid-row no-gutter">
+                <div class="cases__card no-gutter col-3">
                     <img src="assets/how-it-works/cmd-icon.svg" alt="">
                     <h3>Plan a tech conference in San
                         Francisco</h3>
@@ -128,8 +145,8 @@
                         access to 9 workshops, each
                         limited to 30 participants.</p>
                 </div>
-                <div class="cases__card grid-row">
-                    <img src="assets/how-it-works/cmd-icon.svg" alt="">
+                <div class="cases__card no-gutter col-3">
+                    <img src="assets/how-it-works/heart-icon.svg" alt="">
                     <h3>Set up an elegant wedding
                         reception at Grand Hotel</h3>
                     <p>Create a wedding reception for 120
@@ -141,8 +158,8 @@
                         confirmation emails sent upon
                         RSVP.</p>
                 </div>
-                <div class="cases__card grid-row">
-                    <img src="assets/how-it-works/cmd-icon.svg" alt="">
+                <div class="cases__card no-gutter col-3">
+                    <img src="assets/how-it-works/landscape-icon.svg" alt="">
                     <h3>Plan a corporate retreat with
                         activities</h3>
                     <p>Organize a two-day company
@@ -158,7 +175,7 @@
             </div>
         </section>
 
-        <section id="features" class="features">
+        <section id="features" class="container-wide grid-row">
             <h2>Built-in features</h2>
             <p>Manage guests, build pages, collect registrations, and track performance
                 in one unified workspace powered by A1.</p>
@@ -171,14 +188,14 @@
                         searchable and structured from the start.</p>
                 </div>
                 <div class="features__card col-4">
-                    <img src="assets/features/screen-image-1.png" alt="">
+                    <img src="assets/features/screen-image-2.png" alt="">
                     <h3>Event Pages</h3>
                     <p>Use prompts or components to create
                         branded event sites with agenda, speaker
                         bios, tickets, and more.</p>
                 </div>
                 <div class="features__card col-4">
-                    <img src="assets/features/screen-image-1.png" alt="">
+                    <img src="assets/features/screen-image-3.png" alt="">
                     <h3>Registration & payments</h3>
                     <p>Build custom forms with conditional logic,
                         offer multiple ticket types, and connect your
@@ -186,7 +203,7 @@
                         registration flow.</p>
                 </div>
                 <div class="features__card col-4">
-                    <img src="assets/features/screen-image-1.png" alt="">
+                    <img src="assets/features/screen-image-4.png" alt="">
                     <h3>Email Templates</h3>
                     <p>Craft invitations, reminders, and follow-ups
                         that match your brand. Personalize
@@ -194,7 +211,7 @@
                         replies.</p>
                 </div>
                 <div class="features__card col-4">
-                    <img src="assets/features/screen-image-1.png" alt="">
+                    <img src="assets/features/screen-image-5.png" alt="">
                     <h3>Analytics</h3>
                     <p>Monitor signups, email performance,
                         attendance, and engagement. Get instant
@@ -202,16 +219,16 @@
                         event question.</p>
                 </div>
             </div>
-            <a class="btn btn--primary" href="">Learn More</a>
+            <a class="btn btn--primary btn--primary--arrow" href="">Learn More</a>
         </section>
 
-        <section id="pricing" class="plan">
+        <section id="pricing" class="container-wide">
             <h2>Pricing</h2>
-            <div class="grid-row">
-                <div class="plan__card col-3">
+            <div class="plan__list grid-row">
+                <div class="plan__card grid-row no-gutter col-3">
                     <h3>Free</h3>
                     <h4>$0</h4>
-                    <a class="btn--secondary--arrow" href="">Get started</a>
+                    <a class="btn btn--secondary btn--secondary--arrow" href="">Get started</a>
                     <div class="seperator--vertical"></div>
                     <h5>Free for everyone</h5>
                     <ul>
@@ -224,34 +241,37 @@
                         <li>Paid events</li>
                     </ul>
                 </div>
-                <div class="plan__card col-3">
+                <div class="plan__card grid-row no-gutter col-3">
                     <h3>Pro</h3>
                     <h4>$20<span>/month</span></h4>
-                    <a class="btn--secondary--arrow" href="">Get started</a>
-                    <div class="seperator"></div>
+                    <a class="btn btn--secondary btn--secondary--arrow" href="">Get started</a>
+                    <div class="seperator--vertical"></div>
                     <h5>Everthing in Free, plus:</h5>
                     <ul>
                         <li>50 monthly A1 credits</li>
                         <li>500 monthly email credits</li>
                     </ul>
                 </div>
-                <div class="plan__card col-3">
+                <div class="plan__card grid-row no-gutter col-3">
                     <h3>Teams</h3>
                     <h4>$40<span>/member/month</span></h4>
-                    <a class="btn--primary" href=""></a>
-                    Get started <div class="seperator"></div>
+                    <a class="btn btn--primary btn--primary--arrow" href="">Get started</a>
+                    <div class="seperator--vertical"></div>
                     <h5>Everthing in Pro, plus:</h5>
                     <ul>
                         <li>150 monthly A1 credits</li>
                         <li>1,000 monthly email credits</li>
                         <li>Event collaborators</li>
                     </ul>
+                    <div class="plan__popular">
+                        <strong>Popular</strong>
+                    </div>
                 </div>
-                <div class="plan__card col-3">
+                <div class="plan__card grid-row no-gutter col-3">
                     <h3>Enterprise</h3>
                     <h4>Custom</h4>
-                    <a class="btn--secondary--arrow" href="">Get started</a>
-                    <div class="seperator"></div>
+                    <a class="btn btn--secondary btn--secondary--arrow" href="">Get started</a>
+                    <div class="seperator--vertical"></div>
                     <h5>Everthing in Teams, plus:</h5>
                     <ul>
                         <li>10 monthly AI credits</li>
@@ -260,112 +280,125 @@
                         <li>Dedicated support</li>
                         <li>SLA guarantee</li>
                     </ul>
-                    <div class="plan__popular">
-                        Popular
-                    </div>
+
                 </div>
             </div>
         </section>
 
-        <section class="testimonials">
+        <section class="testimonials container-wide">
             <h2>Loved by event planners</h2>
-            <div class="grid-row">
-                <figure class="testimonials__card">
-                    <blockquote>A reliable app that saves time for organizers.</blockquote>
-                    <div class="testimonials__profile">
-                        <img src="assets/testimonials/avatar-1.jpg" alt="">
-                        <div class="grid-row">
-                            <figcaption>Peter Svarc</figcaption>
-                            <small>Owner, Millenium Events</small>
+            <div class="testimonials__wrapper grid-row">
+                <div class="col-4 grid-row no-gutter">
+                    <figure class="testimonials__card">
+                        <blockquote>"A reliable app that saves time for organizers."</blockquote>
+                        <div class="testimonials__profile grid-row no-gutter">
+                            <img src="assets/testimonials/avatar-1.jpg" alt="">
+                            <span>
+                                <figcaption>Peter Svarc</figcaption>
+                                <small>Owner, Millenium Events</small>
+                            </span>
                         </div>
-                    </div>
-                </figure>
-                <figure class="testimonials__card">
-                    <blockquote>We handle all the event organization ourselves,
-                        so it's crucial for us to have a tool we can use
-                        independently and rely on completely. Planar is
-                        perfectly fine-tuned, thoughtfully designed, and
-                        intuitive. We can manage everything literally in
-                        just a few clicks.</blockquote>
-                    <div class="testimonials__profile">
-                        <img src="assets/testimonials/avatar-1.jpg" alt="">
-                        <div class="grid-row">
-                            <figcaption>Karel Neffe</figcaption>
-                            <small>GT Sports owner</small>
+                    </figure>
+                    <figure class="testimonials__card">
+                        <blockquote>"We handle all the event organization ourselves,
+                            so it's crucial for us to have a tool we can use
+                            independently and rely on completely. Planar is
+                            perfectly fine-tuned, thoughtfully designed, and
+                            intuitive. We can manage everything literally in
+                            just a few clicks."</blockquote>
+                        <div class="testimonials__profile grid-row no-gutter">
+                            <img src="assets/testimonials/avatar-2.jpg" alt="">
+                            <span>
+                                <figcaption>Karel Neffe</figcaption>
+                                <small>GT Sports owner</small>
+                            </span>
                         </div>
-                    </div>
-                </figure>
-                <figure class="testimonials__card">
-                    <blockquote>Planar makes life easier for every event
-                        professional. It takes care of complex
-                        organizational tasks in just a few clicks, so we
-                        can focus on what truly matters.</blockquote>
-                    <div class="testimonials__profile">
-                        <img src="assets/testimonials/avatar-1.jpg" alt="">
-                        <div class="grid-row">
-                            <figcaption>Mai Lam Tran</figcaption>
-                            <small>Event Specialist, KB</small>
+                    </figure>
+                </div>
+                <div class="col-4 grid-row no-gutter">
+                    <figure class="testimonials__card">
+                        <blockquote>"Planar makes life easier for every event
+                            professional. It takes care of complex
+                            organizational tasks in just a few clicks, so we
+                            can focus on what truly matters."</blockquote>
+                        <div class="testimonials__profile grid-row no-gutter">
+                            <img src="assets/testimonials/avatar-3.webp" alt="">
+                            <span>
+                                <figcaption>Mai Lam Tran</figcaption>
+                                <small>Event Specialist, KB</small>
+                            </span>
                         </div>
-                    </div>
-                </figure>
-                <figure class="testimonials__card">
-                    <blockquote>Planar has brought a major improvement in
-                        guest management at our public events, for
-                        partners and media. The intuitive and advanced
-                        features can be set up quickly and easily. It's a
-                        flexible system that can adapt to various event
-                        requirements we encounter.</blockquote>
-                    <div class="testimonials__profile">
-                        <img src="assets/testimonials/avatar-1.jpg" alt="">
-                        <div class="grid-row">
-                            <figcaption>David Pavlicek</figcaption>
-                            <small>PR & Comms Manager, Hyundai</small>
+                    </figure>
+                    <figure class="testimonials__card">
+                        <blockquote>"Planar has brought a major improvement in
+                            guest management at our public events, for
+                            partners and media. The intuitive and advanced
+                            features can be set up quickly and easily. It's a
+                            flexible system that can adapt to various event
+                            requirements we encounter."</blockquote>
+                        <div class="testimonials__profile grid-row no-gutter">
+                            <img src="assets/testimonials/avatar-4.jpg" alt="">
+                            <span>
+                                <figcaption>David Pavlicek</figcaption>
+                                <small>PR & Comms Manager, Hyundai</small>
+                            </span>
                         </div>
-                    </div>
-                </figure>
-                <figure class="testimonials__card">
-                    <blockquote>"We value the clear interface, the easy RSVP
-                        confirmations, and the ability to fine-tune
-                        everything as needed."</blockquote>
-                    <div class="testimonials__profile">
-                        <img src="assets/testimonials/avatar-1.jpg" alt="">
-                        <div class="grid-row">
-                            <figcaption>Lucie Schejbalova</figcaption>
-                            <small>Marketing & Comms Specialist, Global Assistance</small>
+                    </figure>
+                </div>
+                <div class="col-4 grid-row no-gutter">
+                    <figure class="testimonials__card">
+                        <blockquote>"We value the clear interface, the easy RSVP
+                            confirmations, and the ability to fine-tune
+                            everything as needed."</blockquote>
+                        <div class="testimonials__profile grid-row no-gutter">
+                            <img src="assets/testimonials/avatar-5.png" alt="">
+                            <span>
+                                <figcaption>Lucie Schejbalova</figcaption>
+                                <small>Marketing & Comms Specialist, Global Assistance</small>
+                            </span>
                         </div>
-                    </div>
-                </figure>
-                <figure class="testimonials__card">
-                    <blockquote>"With Planar, event managers handle
-                        communication efficiently and deliver
-                        experiences that meet the highest standards and
-                        exceed client expectations."</blockquote>
-                    <div class="testimonials__profile">
-                        <img src="assets/testimonials/avatar-1.jpg" alt="">
-                        <div class="grid-row">
-                            <figcaption>Michaela Blazek</figcaption>
-                            <small>Founder, EventLab</small>
+                    </figure>
+                    <figure class="testimonials__card">
+                        <blockquote>"With Planar, event managers handle
+                            communication efficiently and deliver
+                            experiences that meet the highest standards and
+                            exceed client expectations."</blockquote>
+                        <div class="testimonials__profile grid-row no-gutter">
+                            <img src="assets/testimonials/avatar-6.jpg" alt="">
+                            <span>
+                                <figcaption>Michaela Blazek</figcaption>
+                                <small>Founder, EventLab</small>
+                            </span>
                         </div>
-                    </div>
-                </figure>
+                    </figure>
+                </div>
+                <!-- </div> -->
+                <!-- </div> -->
             </div>
         </section>
 
-        <section class="get-started">
-            <h2>Ready to plan your next event?</h2>
-            <p>Let Planar do the heavy lifting so you can focus on the fun stuff.</p>
-            <a class="btn btn--primary" href="">Start for free</a>
+        <section class="get-started container-wide mbt-12">
+
+            <div class="wrapper">
+                <div class="grid-row get__content no-gutter">
+                    <h2 class="mb-1">Ready to plan your next event?</h2>
+                    <p class="mb-6">Let Planar do the heavy lifting so you can focus on the fun stuff.</p>
+                    <a class="btn btn--primary btn--primary--arrow" href="">Start for free</a>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <div class="footer__top grid-row">
-            <div class="col-4">
-                <img src="assets/planar-logo.svg" alt="">
-                <img src="assets/icons/x.svg" alt="">
-                <img src="assets/icons/linked-in.svg" alt="">
+    <footer class="grid-row container-small mbt-6">
+        <div class="footer__top grid-row col-12">
+            <div class="footer__logo col-4 grid-row no-gutter">
+                <img class="" src="assets/planar-logo.svg" alt="">
+                <div class="footer__social">
+                    <img class="footer__twitter" src="assets/icons/x.svg" alt="">
+                    <img class="footer__linkedin" src="assets/icons/linked-in.svg" alt="">
+                </div>
             </div>
-            <div class="col-4">
+            <div class="footer__product col-4">
                 <strong>Product</strong>
                 <ul>
                     <li>Use cases</li>
@@ -373,7 +406,7 @@
                     <li>Pricing</li>
                 </ul>
             </div>
-            <div class="col-4">
+            <div class="footer__resource col-4">
                 <strong>Resource</strong>
                 <ul>
                     <li>Terms of service</li>
@@ -381,8 +414,8 @@
                 </ul>
             </div>
         </div>
-        <div class="footer__copyright">
-            <p>&copy; 2025 Attendu Inc., All rights reserved.</p>
+        <div class="footer__copyright col-12">
+            <strong>&copy; 2025 Attendu Inc., All rights reserved.</strong>
         </div>
     </footer>
 </body>

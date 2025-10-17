@@ -1,13 +1,19 @@
+.container-small {
+    width: 100%;
+    margin: 0;
+    padding: 0 calc(var(--gutter) * 8);
+}
+
 .container-medium {
     width: 100%;
     margin: 0;
-    padding: 0 var(--gutter);
+    padding: 0 calc(var(--gutter) * 10);
 }
 
 .container-wide {
     width: 100%;
     margin: 0;
-    padding: 0 var(--gutter);
+    padding: 0 calc(var(--gutter) * 5);
 }
 
 .container-fluid {
@@ -51,7 +57,7 @@
 
 .col-3 {
     flex: 0 0 calc(100% / var(--columns) * 3);
-    max-width: calc(100% / var(--columns) * 3);
+    max-width: calc1(100% / var(--columns) * 3);
 }
 
 .col-4 {

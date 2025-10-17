@@ -1,9 +1,11 @@
 * {
     font-family: "Inter", sans-serif;
-    box-sizing: border-box;
+    scroll-behavior: smooth;
     margin: 0;
     padding: 0;
 }
+
+/* ! Navigation */
 
 header {
     /* background-color: red; */
@@ -12,6 +14,7 @@ header {
     left: 0;
     right: 0;
     z-index: 10;
+    background-color: #fff;
 }
 
 nav {
@@ -25,6 +28,332 @@ nav {
     justify-content: center;
 }
 
-.nav__logo img{
+.nav__logo img {
     width: 120px;
+}
+
+.nav__cta {
+    justify-content: flex-end;
+    gap: 24px;
+}
+
+/* ! Hero Section */
+
+.hero .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../assets/hero/gradient-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 720px;
+    border-radius: 24px;
+}
+
+.hero__content {
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero__content p,
+.hero__content h1 {
+    text-align: center;
+}
+
+.hero__content p {
+    color: var(--dark_mineral);
+}
+
+.hero__content h1 {
+    max-width: 900px;
+    margin: 24px;
+}
+
+/* ! Trusted By Section */
+
+.trusted-by p {
+    text-align: center;
+    color: var(--calligraphy);
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.trusted-by .grid-row{
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+}
+
+.trusted-by img {
+    width: 120px;
+    max-height: 40px;
+}
+
+/* ! About Planar Section */
+
+.about__planar {
+    background-color: var(--grams_hair);
+}
+
+.about__planar .grid-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 52px;
+}
+
+.about__image {
+    width: 900px;
+    border-radius: 24px;
+}
+
+/* ! Use cases Section */
+
+#use-cases {
+    text-align: center;
+}
+
+.cases img {
+    width: 16px;
+    margin-right: 8px;
+}
+
+.cases__wrapper {
+    border: 1px solid var(--sleet);
+    background-color: var(--dr_white);
+    border-radius: 64px;
+    padding: 6px 8px;
+    /* gap: 240px; */
+    justify-content: space-between;
+}
+
+.cases__wrapper .cases {
+    border-radius: 64px;
+    display: flex;
+    padding: 12px 24px;
+    /* ! NOTE */
+    align-items: center;
+    justify-content: center;
+    /* flex-grow: 1; */
+}
+
+.cases__wrapper .cases:nth-child(1) {
+    flex-basis: 180px;
+    background-color: #fff;
+    border: 1px solid var(--sleet);
+}
+
+.cases__content {
+    /* gap: 1px; */
+    justify-content: space-between;
+}
+
+.cases__card img {
+    border: 1px solid var(--sleet);
+    background-color: var(--white);
+    border-radius: 12px;
+    padding: 4px;
+    margin-bottom: 24px;
+    height: 42px;
+}
+
+#use-cases>.cases__content>.cases__card {
+    text-align: start;
+    padding: 24px;
+    border: 1px solid var(--sleet);
+    border-radius: 12px;
+}
+
+.cases__card h3 {
+    font-size: 14px;
+    width: 240px;
+}
+
+.cases__card p {
+    font-size: 14px;
+    max-width: 240px;
+}
+
+/* ! Features Section */
+#features {
+    background-color: var(--grams_hair);
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+#features p {
+    width: 620px;
+    text-align: center;
+}
+
+.features__card img {
+    width: 100%;
+}
+
+.features__card {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* ! Plans */
+
+.plan__list {
+    /* TODO */
+    justify-content: space-between;
+}
+
+.plan__card {
+    position: relative;
+    flex-direction: column;
+    border: 2px solid var(--sleet);
+    background-color: var(--white);
+    border-radius: 12px;
+    padding: 24px;
+}
+
+.plan__card:nth-child(3) {
+    flex-direction: column;
+    border: 2px solid var(--polar_glow);
+    background-color: var(--white);
+    border-radius: 12px;
+    padding: 24px;
+}
+
+.plan__card h3 {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.plan__card h4 {
+    font-size: 32px;
+    font-weight: 500;
+    margin: 12px 0;
+}
+
+.plan__card h5 {
+    margin-bottom: 8px;
+}
+
+h4 span {
+    font-size: 16px;
+    vertical-align: text-top;
+    margin-left: 4px;
+    color: var(--calligraphy);
+}
+
+.plan__card ul li::before {
+    content: "";
+    background-image: url('../assets/icons/check.svg');
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 4px;
+    width: 24px;
+    height: 24px;
+}
+
+.plan__popular {
+    background-color: var(--veiling_waterfalls);
+    width: fit-content;
+    padding: 4px 16px;
+    border-radius: 24px;
+    color: var(--maritime_outpost);
+    border: 2px solid var(--polar_glow);
+    position: absolute;
+    top: -4%;
+    left: 30%;
+}
+
+.plan__card ul li {
+    margin-top: 4px;
+}
+
+/* ! Testimonials Section */
+
+.testimonials__profile img {
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+}
+
+.testimonials__profile {
+    flex-direction: row;
+}
+
+.testimonials__card {
+    /* height: 100%; */
+    padding: 24px;
+    /* background-color: red;
+     */
+    border: 2px solid var(--sleet);
+    margin-bottom: 24px;
+    border-radius: 12px;
+}
+
+.testimonials__card blockquote {
+    margin-bottom: 24px;
+}
+
+.testimonials__wrapper {
+    height: 500px;
+    align-items: center;
+}
+
+
+/* ! Get Started Section */
+
+.get-started .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../assets/get-started/gradient-2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 380px;
+    border-radius: 24px;
+}
+
+
+.get__content {
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ! Footer Section */
+
+.footer__logo img {
+    width: 160px;
+}
+
+.footer__social img {
+    width: 24px;
+}
+
+.footer__top {
+    justify-content: center;
+}
+
+.footer__logo {
+    flex-direction: column;
+    gap: 24px;
+}
+
+footer ul {
+    margin-top: 12px;
+}
+
+footer li {
+    margin-top: 8px;
+}
+
+footer.grid-row {
+    flex-direction: column;
+    justify-content: center;
+    gap: 88px;
+}
+
+.footer__copyright strong {
+    font-size: 14px;
+    color: var(--calligraphy);
 }
