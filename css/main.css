@@ -137,6 +137,7 @@ nav {
 
 .cases__content {
     justify-content: space-between;
+    gap: 0px;
 }
 
 .cases__card img {
@@ -151,7 +152,7 @@ nav {
 
 #use-cases>.cases__content>.cases__card {
     text-align: start;
-    padding: 24px;
+    padding: 32px;
     border: 2px solid var(--coronation);
     border-radius: 12px;
 }
@@ -174,23 +175,40 @@ nav {
     gap: 24px;
 }
 
-#features > .grid-row p {
-    width: 620px;
-}
-
 .features__card img {
     width: 100%;
 }
 
+.features__card h3 {
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.features__card p {
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 400;
+}
+
 .features__card {
-    width: 100%;
-    overflow: hidden;
+    padding: 32px;
+    border-radius: 16px;
+    background-color: #fff;
+    border: 2px solid var(--coronation);
+}
+
+.features__wrapper {
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.features__content p {
+    max-width: 620px;
 }
 
 /* ! Plans */
 
 .plan__list {
-    /* TODO */
     justify-content: space-between;
 }
 
