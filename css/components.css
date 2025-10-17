@@ -3,7 +3,7 @@
 .btn {
     color: var(--off_black);
     padding: 12px 18px;
-    border-radius: 8px;
+    border-radius: 16px;
     font-weight: 700;
     width: fit-content;
 }
@@ -26,7 +26,7 @@
 .btn--secondary {
     padding: 10px 16px;
     background-color: var(--white);
-    border: 2px solid var(--sleet);
+    border: 2px solid var(--coronation);
 }
 
 .btn--secondary--arrow::after {
@@ -55,7 +55,7 @@
 
 .input__container:hover {
     border: 1px solid var(--dark_mineral);
-    box-shadow: 0px 0px 25px 5px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, 0.2);
 }
 
 .prompt_event {
@@ -90,8 +90,14 @@
 /* ! Seperator */
 
 .seperator--vertical {
-    background-color: var(--sleet);
+    background-color: var(--coronation);
     margin: 24px 0;
     height: 1px;
     width: 100%;
+}
+
+.bg-gray {
+    background-color: var(--grams_hair);
+    border-top: 2px solid var(--coronation);
+    border-bottom: 2px solid var(--coronation);
 }

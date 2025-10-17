@@ -56,11 +56,6 @@ nav {
     align-items: center;
 }
 
-.hero__content p,
-.hero__content h1 {
-    text-align: center;
-}
-
 .hero__content p {
     color: var(--dark_mineral);
 }
@@ -73,7 +68,6 @@ nav {
 /* ! Trusted By Section */
 
 .trusted-by p {
-    text-align: center;
     color: var(--calligraphy);
     font-weight: 600;
     font-size: 16px;
@@ -91,11 +85,6 @@ nav {
 }
 
 /* ! About Planar Section */
-
-.about__planar {
-    background-color: var(--grams_hair);
-}
-
 .about__planar .grid-row {
     flex-direction: column;
     align-items: center;
@@ -108,11 +97,6 @@ nav {
 }
 
 /* ! Use cases Section */
-
-#use-cases {
-    text-align: center;
-}
-
 .cases img {
     width: 16px;
     margin-right: 8px;
@@ -123,7 +107,6 @@ nav {
     background-color: var(--dr_white);
     border-radius: 64px;
     padding: 6px 8px;
-    /* gap: 240px; */
     justify-content: space-between;
 }
 
@@ -138,7 +121,6 @@ nav {
     /* ! NOTE */
     align-items: center;
     justify-content: center;
-    /* flex-grow: 1; */
 }
 
 .cases__wrapper .cases:nth-child(1) {
@@ -146,7 +128,7 @@ nav {
     flex-basis: 180px;
     background-color: var(--white);
     border: 2px solid var(--coronation);
-    box-shadow: 0px 0px 25px 1px rgba(0,0,0,0.05);
+    box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.05);
 }
 
 .cases__wrapper .cases:nth-child(n+2) {
@@ -154,13 +136,12 @@ nav {
 }
 
 .cases__content {
-    /* gap: 1px; */
     justify-content: space-between;
 }
 
 .cases__card img {
     border: 2px solid var(--coronation);
-    box-shadow: 0px 0px 25px 1px rgba(0,0,0,0.05);
+    box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.05);
     background-color: var(--white);
     border-radius: 12px;
     padding: 4px;
@@ -187,16 +168,14 @@ nav {
 }
 
 /* ! Features Section */
-#features {
-    background-color: var(--grams_hair);
+#features>.grid-row {
     flex-direction: column;
     align-items: center;
     gap: 24px;
 }
 
-#features p {
+#features > .grid-row p {
     width: 620px;
-    text-align: center;
 }
 
 .features__card img {
@@ -218,10 +197,10 @@ nav {
 .plan__card {
     position: relative;
     flex-direction: column;
-    border: 2px solid var(--sleet);
+    border: 2px solid var(--coronation);
     background-color: var(--white);
     border-radius: 12px;
-    padding: 24px;
+    padding: 38px;
 }
 
 .plan__card:nth-child(3) {
@@ -229,7 +208,6 @@ nav {
     border: 2px solid var(--polar_glow);
     background-color: var(--white);
     border-radius: 12px;
-    padding: 24px;
 }
 
 .plan__card h3 {
@@ -273,7 +251,7 @@ h4 span {
     border: 2px solid var(--polar_glow);
     position: absolute;
     top: -4%;
-    left: 30%;
+    left: 35%;
 }
 
 .plan__card ul li {
