@@ -44,6 +44,8 @@
 .input__container {
     display: flex;
     background-color: var(--white);
+    flex-grow: 1;
+    /* ! NOTE */
     width: 620px;
     height: 100px;
     border-radius: 16px;

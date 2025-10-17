@@ -19,9 +19,9 @@
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/utilities.css">
-    <link rel="stylesheet" href="css/resp.css">
     <link rel="stylesheet" href="css/animation.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/resp.css">
     <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
@@ -44,10 +44,10 @@
 <body>
     <header class="container-wide">
         <nav class="grid-row no-gutter">
-            <div class="nav__logo col-2">
+            <div class="nav__logo col-2 col-lg-6">
                 <img src="assets/planar-logo.svg" alt="">
             </div>
-            <div class="nav__content grid-row no-gutter col-6">
+            <div class="nav__content grid-row no-gutter col-6 col-xxl-9">
                 <a class="btn" href="#use-cases">Use Cases</a>
                 <a class="btn" href="#features">Features</a>
                 <a class="btn" href="#pricing">Pricing</a>
@@ -55,6 +55,13 @@
             <div class="nav__cta grid-row no-gutter col-4">
                 <a class="btn btn--secondary" href="javascript:;">Log in</a>
                 <a class="btn btn--primary btn--primary--arrow" href="javascript:;">Start it for free</a>
+            </div>
+            <div class="col-6 nav__mobile col-xxl-1 col-lg-6">
+                <div class="hamburger__menu">
+                    <span class="menu__linear"></span>
+                    <span class="menu__linear"></span>
+                    <span class="menu__linear"></span>
+                </div>
             </div>
         </nav>
     </header>
@@ -66,7 +73,8 @@
                     <img class="mb-2" src="assets/hero/imgi_53_top-post-badge.svg" alt="">
                     <h1 class="text-center">The world's first AI agent
                         for event planning</h1>
-                    <p class="mb-8 text-center">Say goodbye to repetitive tasks.<br>Planar helps you run your events in a
+                    <p class="mb-8 text-center prl-2">Say goodbye to repetitive tasks.<br>Planar helps you run your events in
+                        a
                         fraction of the time.</p>
                     <form class="">
                         <div class="input__container">
@@ -91,9 +99,9 @@
             </div>
         </section>
 
-        <section class="about__planar bg-gray container-fluid pbt-8">
-            <div class="grid-row no-gutter">
-                <h2>See Planar in action</h2>
+        <section class="about__planar bg-gray container-fluid">
+            <div class="grid-row no-gutter pt-8 mb-8">
+                <h2 class="text-center">See Planar in action</h2>
                 <img class="about__image" src="assets/about-planar/male-red-shirt.webp" alt="">
             </div>
         </section>
@@ -134,7 +142,7 @@
                 </strong>
             </div>
             <div class="cases__content grid-row no-gutter">
-                <div class="cases__card no-gutter col-4">
+                <div class="cases__card no-gutter col-4 col-xxl-5 col-xl-12">
                     <img src="assets/how-it-works/cmd-icon.svg" alt="">
                     <h3>Plan a tech conference in San
                         Francisco</h3>
@@ -145,7 +153,7 @@
                         access to 9 workshops, each
                         limited to 30 participants.</p>
                 </div>
-                <div class="cases__card no-gutter col-4">
+                <div class="cases__card no-gutter col-4 col-xxl-5 col-xl-12">
                     <img src="assets/how-it-works/heart-icon.svg" alt="">
                     <h3>Set up an elegant wedding
                         reception at Grand Hotel</h3>
@@ -158,7 +166,7 @@
                         confirmation emails sent upon
                         RSVP.</p>
                 </div>
-                <div class="cases__card no-gutter col-4">
+                <div class="cases__card no-gutter col-4 col-xxl-6 col-xl-12">
                     <img src="assets/how-it-works/landscape-icon.svg" alt="">
                     <h3>Plan a corporate retreat with
                         activities</h3>
@@ -175,27 +183,27 @@
             </div>
         </section>
 
-        <section id="features" class="bg-gray container-wide pbt-12">
+        <section id="features" class="bg-gray container-wide">
             <div class="features__content grid-row no-gutter">
-                <h2 class="text-center">Built-in features</h2>
+                <h2 class="text-center pt-12">Built-in features</h2>
                 <p class="mb-2 text-center">Manage guests, build pages, collect registrations, and track performance
                     in one unified workspace powered by A1.</p>
                 <div class="features__wrapper grid-row mb-2">
-                    <div class="features__card col-8">
+                    <div class="features__card col-8 col-xl-12 col-lg-12">
                         <img src="assets/features/screen-image-1.png" alt="">
                         <h3>Guest List</h3>
                         <p>Upload contacts, tag VIPs, assign owners, and collaborate on guest data in real time. Every
                             detail is
                             searchable and structured from the start.</p>
                     </div>
-                    <div class="features__card col-4">
+                    <div class="features__card col-4 col-lg-12">
                         <img src="assets/features/screen-image-2.png" alt="">
                         <h3>Event Pages</h3>
                         <p>Use prompts or components to create
                             branded event sites with agenda, speaker
                             bios, tickets, and more.</p>
                     </div>
-                    <div class="features__card col-4">
+                    <div class="features__card col-4 col-lg-12">
                         <img src="assets/features/screen-image-3.png" alt="">
                         <h3>Registration & payments</h3>
                         <p>Build custom forms with conditional logic,
@@ -203,7 +211,7 @@
                             preferred payment method for a smooth
                             registration flow.</p>
                     </div>
-                    <div class="features__card col-4">
+                    <div class="features__card col-4 col-lg-12">
                         <img src="assets/features/screen-image-4.png" alt="">
                         <h3>Email Templates</h3>
                         <p>Craft invitations, reminders, and follow-ups
@@ -211,7 +219,7 @@
                             messages and track who opens, clicks, or
                             replies.</p>
                     </div>
-                    <div class="features__card col-4">
+                    <div class="features__card col-4 col-lg-12">
                         <img src="assets/features/screen-image-5.png" alt="">
                         <h3>Analytics</h3>
                         <p>Monitor signups, email performance,
@@ -220,7 +228,7 @@
                             event question.</p>
                     </div>
                 </div>
-                <a class="btn btn--primary btn--primary--arrow" href="">Learn More</a>
+                <a class="btn btn--primary btn--primary--arrow mb-12" href="">Learn More</a>
             </div>
         </section>
 
@@ -290,7 +298,7 @@
         <section class="testimonials container-wide mbt-12">
             <h2 class="text-center mb-6">Loved by event planners</h2>
             <div class="testimonials__wrapper grid-row">
-                <div class="col-4 grid-row no-gutter">
+                <div class="col-4 col-lg-12 grid-row no-gutter">
                     <figure class="testimonials__card">
                         <blockquote>"A reliable app that saves time for organizers."</blockquote>
                         <div class="testimonials__profile grid-row no-gutter">
@@ -317,7 +325,7 @@
                         </div>
                     </figure>
                 </div>
-                <div class="col-4 grid-row no-gutter">
+                <div class="col-4 col-lg-12 grid-row no-gutter">
                     <figure class="testimonials__card">
                         <blockquote>"We handle all the event organization ourselves,
                             so it's crucial for us to have a tool we can use
@@ -347,7 +355,7 @@
                         </div>
                     </figure>
                 </div>
-                <div class="col-4 grid-row no-gutter">
+                <div class="col-4 col-lg-12 grid-row no-gutter">
                     <figure class="testimonials__card">
                         <blockquote>"Planar makes life easier for every event
                             professional, It takes care Of complex
@@ -385,7 +393,7 @@
             <div class="wrapper">
                 <div class="grid-row get__content no-gutter">
                     <h2 class="mb-1">Ready to plan your next event?</h2>
-                    <p class="mb-6">Let Planar do the heavy lifting so you can focus on the fun stuff.</p>
+                    <p class="mb-6 text-center">Let Planar do the heavy lifting so you can focus on the fun stuff.</p>
                     <a class="btn btn--primary btn--primary--arrow" href="">Start for free</a>
                 </div>
             </div>
@@ -394,7 +402,7 @@
 
     <footer class="grid-row container-small mbt-6">
         <div class="footer__top grid-row col-12">
-            <div class="footer__logo col-6 grid-row no-gutter">
+            <div class="footer__logo col-6 col-lg-12 grid-row no-gutter">
                 <img class="" src="assets/planar-logo.svg" alt="">
                 <div class="footer__social">
                     <img class="footer__twitter" src="assets/icons/x.svg" alt="">
@@ -409,7 +417,7 @@
                     <li>Pricing</li>
                 </ul>
             </div>
-            <div class="footer__resource col-3">
+            <div class="footer__resource col-3 col-lg-12">
                 <strong>Resource</strong>
                 <ul>
                     <li>Terms of service</li>

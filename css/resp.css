@@ -1,19 +1,100 @@
 @media (max-width: 1399.98px) {
+
   /* TODO */
+  .nav__cta {
+    display: none;
+  }
+
+  .nav__mobile {
+    display: flex;
+  }
+
+  .cases__content {
+    justify-content: center;
+  }
 }
 
 @media (max-width: 1199.98px) {
+
   /* TODO */
+  h1 {
+    font-size: 52px;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  .plan__card h3 {
+    font-size: 24px;
+  }
+
+  .plan__card h4 {
+    font-size: 20px;
+  }
+
+  .cases__card {
+    width: 100%;
+  }
+
+  .cases__card p {
+    max-width: 100%;
+  }
+
+  .plan__list {
+    flex-direction: column;
+    width: 100%;
+    gap: 24px;
+  }
+
+  .plan__popular {
+    top: -4%;
+    left: 45%;
+  }
 }
 
 @media (max-width: 991.98px) {
+
   /* TODO */
+  .nav__content {
+    display: none;
+  }
+
+  .input__container {
+    width: 380px;
+  }
+
+  .plan__list {
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .plan__card {}
 }
 
 @media (max-width: 767.98px) {
+
   /* TODO */
+  .prompt_event::placeholder {
+    opacity: 0;
+  }
+  h1 {
+    font-size: 38px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .input__container {
+    width: 290px;
+  }
+
 }
 
 @media (max-width: 575.98px) {
   /* TODO */
+  .cases__wrapper {
+    border-radius: 24px;
+  }
 }
