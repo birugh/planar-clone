@@ -1,14 +1,5 @@
-* {
-    font-family: "Inter", sans-serif;
-    scroll-behavior: smooth;
-    margin: 0;
-    padding: 0;
-}
-
 /* ! Navigation */
-
 header {
-    /* background-color: red; */
     position: fixed;
     top: 0;
     left: 0;
@@ -20,61 +11,37 @@ header {
 nav {
     width: 100%;
     height: 80px;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav__content {
-    justify-content: center;
 }
 
 .nav__logo img {
     width: 120px;
 }
 
-.nav__cta {
-    justify-content: flex-end;
-    gap: 24px;
-}
-
-.nav__mobile {
-    display: none;
-    justify-content: end;
-}
-
 .hamburger__menu {
-  width: 24px;
-  height: 18px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  cursor: pointer;
+    width: 24px;
+    height: 18px;
+    cursor: pointer;
 }
 
 .menu__linear {
-  width: 100%;
-  height: 3px;
-  background-color: var(--off_black);
-  border-radius: 2px;
+    width: 100%;
+    height: 3px;
+    border-radius: 2px;
+    background-color: var(--off_black);
 }
 
 /* ! Hero Section */
-
-.hero .wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.hero__bg {
+    height: 720px;
+    border-radius: 24px;
     background-image: url("../assets/hero/gradient-1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 720px;
-    border-radius: 24px;
 }
 
-.hero__content {
-    flex-direction: column;
-    align-items: center;
+.hero__img img {
+    width: 100%;
 }
 
 .hero__content p {
@@ -83,38 +50,20 @@ nav {
 
 .hero__content h1 {
     max-width: 900px;
-    margin: 24px;
 }
 
 /* ! Trusted By Section */
-
 .trusted-by p {
     color: var(--calligraphy);
     font-weight: 600;
     font-size: 16px;
 }
 
-.trusted-by .grid-row {
-    justify-content: center;
-    align-items: center;
-    gap: 64px;
-}
-
 .trusted-by img {
-    width: 120px;
-    max-height: 40px;
+    max-width: 120px;
 }
 
 /* ! About Planar Section */
-.about__planar h2 {
-    width: 100%;
-}
-.about__planar .grid-row {
-    flex-direction: column;
-    align-items: center;
-    gap: 52px;
-}
-
 .about__image {
     width: 100%;
     max-width: 900px;
@@ -128,57 +77,48 @@ nav {
 }
 
 .cases__wrapper {
-    border: 2px solid var(--coronation);
     background-color: var(--dr_white);
+    outline: 2px solid var(--coronation);
     border-radius: 64px;
-    padding: 6px 8px;
+}
+
+.cases {
+    display: flex;
+    align-items: center;
     justify-content: center;
+    border-radius: 64px;
+    padding: 12px 24px;
 }
 
 .cases__name {
     font-weight: 600;
 }
 
-.cases__wrapper .cases {
-    border-radius: 64px;
-    display: flex;
-    padding: 12px 24px;
-    /* ! NOTE */
-    align-items: center;
-    justify-content: center;
-}
-
-.cases__wrapper .cases:nth-child(1) {
-    color: var(--black);
-    flex-basis: 180px;
+.cases:nth-child(1) {
     background-color: var(--white);
     border: 2px solid var(--coronation);
+    color: var(--black);
     box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.05);
 }
 
-.cases__wrapper .cases:nth-child(n+2) {
+.cases:nth-child(n+2) {
     color: var(--calligraphy);
 }
 
-.cases__content {
-    justify-content: space-between;
-    gap: 24px;
-}
-
-.cases__card img {
+ .cases__card img {
     border: 2px solid var(--coronation);
-    box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.05);
     background-color: var(--white);
+    box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.05);
     border-radius: 12px;
     padding: 4px;
     margin-bottom: 24px;
     height: 42px;
 }
 
-#use-cases>.cases__content>.cases__card {
-    text-align: start;
-    padding: 32px;
+.cases__card {
     border: 2px solid var(--coronation);
+    height: 440px;
+    padding: 32px;
     border-radius: 12px;
 }
 
@@ -188,8 +128,8 @@ nav {
 }
 
 .cases__card p {
+    line-height: 1.5;
     font-size: 14px;
-    max-width: 230px;
     font-weight: 400;
 }
 
@@ -232,11 +172,9 @@ nav {
 
 /* ! Plans */
 
-.plan__list {
-    justify-content: space-between;
-}
-
 .plan__card {
+    height: 100%;
+    display: flex;
     position: relative;
     flex-direction: column;
     border: 2px solid var(--coronation);
@@ -245,11 +183,9 @@ nav {
     padding: 38px;
 }
 
-.plan__card:nth-child(3) {
-    flex-direction: column;
+.plan__card.popular {
     border: 2px solid var(--polar_glow);
     background-color: var(--white);
-    border-radius: 12px;
 }
 
 .plan__card h3 {
@@ -268,10 +204,10 @@ nav {
 }
 
 h4 span {
-    font-size: 16px;
-    vertical-align: text-top;
-    margin-left: 4px;
     color: var(--calligraphy);
+    vertical-align: text-top;
+    font-size: 16px;
+    margin-left: 4px;
 }
 
 .plan__card ul li::before {
@@ -286,13 +222,14 @@ h4 span {
 
 .plan__popular {
     background-color: var(--veiling_waterfalls);
-    width: fit-content;
-    padding: 4px 16px;
-    border-radius: 24px;
     color: var(--maritime_outpost);
     border: 2px solid var(--polar_glow);
+    padding: 4px 16px;
+    border-radius: 24px;
+    width: fit-content;
     position: absolute;
-
+    top: -4%;
+    right: 34%;
 }
 
 .plan__card ul li {
@@ -307,12 +244,7 @@ h4 span {
     object-fit: cover;
 }
 
-.testimonials__profile span {
-    width: 100%;
-}
-
 .testimonials__profile {
-    flex-direction: row;
     align-items: center;
     gap: 12px;
 }
@@ -324,6 +256,7 @@ h4 span {
 
 .testimonials__card {
     width: 100%;
+    height: fit-content;
     padding: 24px;
     border: 2px solid var(--coronation);
     margin-bottom: 24px;
@@ -336,29 +269,14 @@ h4 span {
     font-size: 14px;
 }
 
-.testimonials__wrapper {
-    height: 100%;
-    align-items: center;
-}
-
 /* ! Get Started Section */
-
-.get-started .wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.get__started__bg {
     background-image: url("../assets/get-started/gradient-2.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     height: 380px;
     border-radius: 24px;
-    padding: 24px;
-}
-
-.get__content {
-    flex-direction: column;
-    align-items: center;
 }
 
 .get__content p {
@@ -366,14 +284,8 @@ h4 span {
 }
 
 /* ! Footer Section */
-
 footer {
     width: 100%;
-}
-
-.footer__logo {
-    flex-direction: column;
-    gap: 24px;
 }
 
 .footer__logo img {
@@ -386,20 +298,15 @@ footer {
 
 footer strong {
     font-weight: 500;
+    margin-top: 4px;
 }
 
 footer ul {
-    margin-top: 12px;
+    margin-top: 20px;
 }
 
 footer li {
-    margin-top: 12px;
-}
-
-footer.grid-row {
-    flex-direction: column;
-    justify-content: center;
-    gap: 76px;
+    margin-bottom: 12px;
 }
 
 .footer__copyright strong {

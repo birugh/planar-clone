@@ -1,17 +1,17 @@
 @media (max-width: 1399.98px) {
 
   /* TODO */
-  .nav__cta {
+  /* .nav__cta {
     display: none;
   }
 
   .nav__mobile {
-    display: flex;
+    display: block;
   }
 
   .cases__content {
     justify-content: center;
-  }
+  } */
 }
 
 @media (max-width: 1199.98px) {
