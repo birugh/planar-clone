@@ -85,13 +85,13 @@
 }
 
 .col-3 {
-    flex: 0 0 calc((100% / var(--columns) * 3) - 18px);
-    max-width: calc((100% / var(--columns) * 3) - 18px);
+    flex: 0 0 calc(100% / var(--columns) * 3);
+    max-width: calc(100% / var(--columns) * 3);
 }
 
 .col-4 {
-    flex: 0 0 calc((100% / var(--columns) * 4) - 18px);
-    max-width: calc((100% / var(--columns) * 4) - 18px);
+    flex: 0 0 calc(100% / var(--columns) * 4);
+    max-width: calc(100% / var(--columns) * 4);
 }
 
 .col-5 {
@@ -110,8 +110,8 @@
 }
 
 .col-8 {
-    flex: 0 0 calc((100% / var(--columns) * 8) - 18px);
-    max-width: calc((100% / var(--columns) * 8) - 18px);
+    flex: 0 0 calc(100% / var(--columns) * 8);
+    max-width: calc(100% / var(--columns) * 8);
 }
 
 .col-9 {

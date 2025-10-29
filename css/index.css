@@ -1,37 +1,6 @@
-/* ! Navigation */
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
-    background-color: #fff;
-}
-
-nav {
-    width: 100%;
-    height: 80px;
-}
-
-.nav__logo img {
-    width: 120px;
-}
-
-.hamburger__menu {
-    width: 24px;
-    height: 18px;
-    cursor: pointer;
-}
-
-.menu__linear {
-    width: 100%;
-    height: 3px;
-    border-radius: 2px;
-    background-color: var(--off_black);
-}
-
 /* ! Hero Section */
 .hero__bg {
+    padding: 24px;
     height: 720px;
     border-radius: 24px;
     background-image: url("../assets/hero/gradient-1.jpg");
@@ -60,7 +29,7 @@ nav {
 }
 
 .trusted-by img {
-    max-width: 120px;
+    max-height: 32px;
 }
 
 /* ! About Planar Section */
@@ -77,35 +46,60 @@ nav {
 }
 
 .cases__wrapper {
+    scrollbar-width: auto;
+    position: relative;
+    height: 100%;
+    white-space: nowrap;
+    flex-wrap: nowrap;
     background-color: var(--dr_white);
     outline: 2px solid var(--coronation);
     border-radius: 64px;
+    overflow: hidden;
+}
+
+.scroll__wrapper {
+    overflow-y: hidden;
+}
+
+.scroll__wrapper::-webkit-scrollbar {
+    height: 2px;
+}
+
+.scroll__wrapper::-webkit-scrollbar-thumb {
+    background: rgb(218, 218, 218);
+    border-radius: 8px;
 }
 
 .cases {
     display: flex;
+    position: relative;
     align-items: center;
     justify-content: center;
     border-radius: 64px;
-    padding: 12px 24px;
+    padding: 12px 42px;
+    outline: 0px solid var(--coronation);
+    transition: background-color .2s ease-in-out, outline .2s ease-in-out, color .2s ease-in-out;
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 .cases__name {
-    font-weight: 600;
+    font-weight: 500;
 }
 
-.cases:nth-child(1) {
+.cases.selected {
     background-color: var(--white);
-    border: 2px solid var(--coronation);
+    outline: 2px solid var(--coronation);
     color: var(--black);
     box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.05);
 }
 
-.cases:nth-child(n+2) {
+.cases {
     color: var(--calligraphy);
 }
 
- .cases__card img {
+.cases__card img {
     border: 2px solid var(--coronation);
     background-color: var(--white);
     box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.05);
@@ -117,7 +111,8 @@ nav {
 
 .cases__card {
     border: 2px solid var(--coronation);
-    height: 440px;
+    height: 100%;
+    width: 100%;
     padding: 32px;
     border-radius: 12px;
 }
@@ -125,10 +120,11 @@ nav {
 .cases__card h3 {
     max-width: 240px;
     margin-bottom: 8px;
+    line-height: 1.3;
 }
 
 .cases__card p {
-    line-height: 1.5;
+    line-height: 1.6;
     font-size: 14px;
     font-weight: 400;
 }
@@ -140,8 +136,13 @@ nav {
     gap: 24px;
 }
 
+.features__content p {
+    max-width: 620px;
+}
+
 .features__card img {
     width: 100%;
+    margin-bottom: 12px;
 }
 
 .features__card h3 {
@@ -149,15 +150,18 @@ nav {
 }
 
 .features__card p {
+    width: 100%;
     font-size: 14px;
     line-height: 1.4;
     font-weight: 400;
 }
 
 .features__card {
+    /* margin-bottom: 52px; */
     padding: 32px;
     border-radius: 16px;
     background-color: #fff;
+    height: 100%;
     border: 2px solid var(--coronation);
 }
 
@@ -166,12 +170,12 @@ nav {
     gap: 24px;
 }
 
-.features__content p {
-    max-width: 620px;
+
+#features .btn {
+    margin-top: 24px;
 }
 
 /* ! Plans */
-
 .plan__card {
     height: 100%;
     display: flex;
@@ -200,7 +204,8 @@ nav {
 }
 
 .plan__card h5 {
-    margin-bottom: 8px;
+    font-size: 16px;
+    margin-bottom: 4px;
 }
 
 h4 span {
@@ -215,7 +220,7 @@ h4 span {
     background-image: url('../assets/icons/check.svg');
     display: inline-block;
     vertical-align: middle;
-    margin-right: 4px;
+    margin-right: 8px;
     width: 24px;
     height: 24px;
 }
@@ -233,8 +238,12 @@ h4 span {
 }
 
 .plan__card ul li {
+    display: flex;
+    align-items: center;
     margin-top: 4px;
 }
+
+
 
 /* ! Testimonials Section */
 .testimonials__profile img {
@@ -267,6 +276,14 @@ h4 span {
     margin-bottom: 24px;
     color: var(--dark_mineral);
     font-size: 14px;
+}
+
+.testimonials__left {
+    margin-top: 16px;
+}
+
+.testimonials__right {
+    margin-top: 8px;
 }
 
 /* ! Get Started Section */

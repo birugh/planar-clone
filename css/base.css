@@ -6,6 +6,7 @@
     /* * Dark Colors */
     --black_knight: #020a0f;
     --off_black: #303030;
+    
 
     /* * Gray Colors */
     --dark_mineral: #505663;
@@ -24,10 +25,6 @@
     /* * Grid System */
     --columns: 12;
     --gutter: 32px;
-}
-
-::-webkit-scrollbar {
-    display: none;
 }
 
 * {
@@ -60,7 +57,7 @@ h1 {
 }
 
 h2 {
-    font-weight: 500;
+    font-weight: 600;
     font-size: 56px;
     line-height: 1.2;
 }
@@ -75,5 +72,5 @@ p {
     font-weight: 500;
     color: var(--calligraphy);
     font-size: 18px;
-    line-height: 1.2;
+    line-height: 1.4;
 }
