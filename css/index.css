@@ -1,6 +1,6 @@
 /* ! Hero Section */
 .hero__bg {
-    padding: 24px;
+    padding: 0 24px;
     height: 720px;
     border-radius: 24px;
     background-image: url("../assets/hero/gradient-1.jpg");
