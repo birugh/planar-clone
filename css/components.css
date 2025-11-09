@@ -30,6 +30,33 @@ nav {
     background-color: var(--off_black);
 }
 
+.menu__content {
+  position: absolute;
+  border-radius: 0 0 12px 12px;
+  top: 39%;
+  right: 0;
+  height: 100vh;
+  padding: 24px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+
+  pointer-events: none;
+  transform: translateX(1620px) translateY(49px);
+  transition: all .7s ease;
+  z-index: 0;
+}
+
+.menu__content a {
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.menu__content.active {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(0px) translateY(49px);
+}
+
 /* ! Button */
 .btn {
     color: var(--off_black);
@@ -120,7 +147,7 @@ nav {
 }
 
 /* ! Seperator */
-.seperator--vertical {
+.seperator--horizontal {
     background-color: var(--coronation);
     margin: 24px 0;
     height: 1px;
